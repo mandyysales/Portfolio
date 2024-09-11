@@ -1,0 +1,153 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.Cabecalho-PagHome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.FotoCirculo-Cab-PagHome {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.NomePagina-Cab-PagHome {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Menu-Cab-PagHome ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.Menu-Cab-PagHome ul li {
+    display: inline;
+}
+
+.Menu-Cab-PagHome ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.Menu-Cab-PagHome ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.Conteudo-PagHome {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.Fotos-Cont-PagHome img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Seções diferentes */
+section {
+    padding: 40px 0;
+}
+
+.Titulo-Cert, .Titulo-Proj, .Titulo-Esquer-Resum, .Titulo-SobreMim, .Titulo-Inter, .Titulo-Habilid {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Projetos, .Resumos, .SobreMim, .Interesses, .Habilidades {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos Projetos */
+.Projeto1-Conte-Proj {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Imagem-Conte-Proj {
+    width: 40%;
+    height: 200px;
+    background-color: #ccc;
+}
+
+.VerMais-Conte-Proj {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.Rodape .Contatos a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.Rodape .Contatos a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .Cabecalho-PagHome {
+        flex-direction: column;
+    }
+
+    .Projeto1-Conte-Proj {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Imagem-Conte-Proj, .VerMais-Conte-Proj {
+        width: 100%;
+    }
+}
